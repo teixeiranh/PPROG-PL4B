@@ -19,7 +19,7 @@ interface Mensalidade{
 ElementosDaEscola <|-- Professores
 ElementosDaEscola <|-- Alunos
 
-Professores <|.. Mensalidade
+Mensalidade <|.. Professores
 'Alunos <|.. Mensalidade
 
 @enduml
