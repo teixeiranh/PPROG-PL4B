@@ -15,4 +15,20 @@ public abstract class ElementosDaEscola {
         this.nome = NOME_POR_OMISSAO;
         this.numeroIdentificacaoCivil=NUMERO_IDENTIFICACAO_CIVIL_POR_OMISSAO;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getNumeroIdentificacaoCivil() {
+        return numeroIdentificacaoCivil;
+    }
+
+    public void setNumeroIdentificacaoCivil(int numeroIdentificacaoCivil) {
+        this.numeroIdentificacaoCivil = numeroIdentificacaoCivil;
+    }
 }

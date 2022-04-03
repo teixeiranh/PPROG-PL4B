@@ -27,6 +27,14 @@ public class Professores extends ElementosDaEscola implements Mensalidade {
         Professores.salarioBase = salarioBase;
     }
 
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
     public float mensalidade() {
         if (this.categoria.equals("sem categoria")) {
             return salarioBase;

@@ -20,6 +20,6 @@ ElementosDaEscola <|-- Professores
 ElementosDaEscola <|-- Alunos
 
 Professores <|.. Mensalidade
-Alunos <|.. Mensalidade
+'Alunos <|.. Mensalidade
 
 @enduml
