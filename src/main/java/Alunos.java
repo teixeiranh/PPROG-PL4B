@@ -1,3 +1,6 @@
+/**
+ * Um aluno da escola.
+ */
 public class Alunos extends ElementosDaEscola {
 
     private int numeroMecanografico;
@@ -8,6 +11,13 @@ public class Alunos extends ElementosDaEscola {
     private static final String TIPO_DE_ALUNO_POR_OMISSAO = "sem tipo";
     private static final float BOLSA_POR_OMISSAO = 0;
 
+    /**
+     * Constrói um aluno da escola.
+     * @param nome nome do aluno
+     * @param numeroIdentificacaoCivil número de identificação civil do aluno
+     * @param numeroMecanografico número mecanográfico do aluno
+     * @param tipoDeAluno tipo de aluno (bolseiro ou não bolseiro)
+     */
     public Alunos(String nome, int numeroIdentificacaoCivil, int numeroMecanografico,String tipoDeAluno) {
         super(nome, numeroIdentificacaoCivil);
         this.numeroMecanografico = numeroMecanografico;
@@ -16,6 +26,14 @@ public class Alunos extends ElementosDaEscola {
 
     }
 
+    /**
+     * Constrói um aluno da escola.
+     * @param nome nome do aluno
+     * @param numeroIdentificacaoCivil número de identificação civil do aluno
+     * @param numeroMecanografico número mecanográfico do aluno
+     * @param tipoDeAluno tipo de aluno (bolseiro ou não bolseiro)
+     * @param bolsa valor da bolsa que o aluno recebe
+     */
     public Alunos(String nome, int numeroIdentificacaoCivil, int numeroMecanografico,String tipoDeAluno,float bolsa) {
         super(nome, numeroIdentificacaoCivil);
         this.numeroMecanografico = numeroMecanografico;
@@ -24,6 +42,9 @@ public class Alunos extends ElementosDaEscola {
     }
 
 
+    /**
+     * Constrói um aluno da escola.
+     */
     public Alunos() {
         super();
         this.numeroMecanografico = NUMERO_MECANOGRAFICO_POR_OMISSAO;

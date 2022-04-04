@@ -1,3 +1,7 @@
+/**
+ * Este programa mostra como funcionam as classes dos alunos e professores.
+ * Ver ficha da prática em causa.
+ */
 public class Main {
     public static void main(String[] args) {
 
@@ -32,6 +36,34 @@ public class Main {
         }
         System.out.println("------------------------------------------------------------------------------------------------------------");
 
+        for (ElementosDaEscola elementos : arrayElementos) {
+            if (elementos != null)  {
+                System.out.printf("Nome %s e %s.",elementos.getNome(),elementos.getClass());
+                System.out.println();
+            }
+        }
+
+        System.out.println("------------------------------------------------------------------------------------------------------------");
+
+        for (ElementosDaEscola elementos : arrayElementos) {
+            if (elementos != null && elementos instanceof Professores) {
+                System.out.printf("Professor de nome %s e salario %f.", elementos.getNome(), ((Professores) elementos).mensalidade());
+                System.out.println();
+            }
+        }
+
+        System.out.println("------------------------------------------------------------------------------------------------------------");
+        for (ElementosDaEscola elementos : arrayElementos) {
+            if (elementos != null && elementos instanceof Alunos && ((Alunos) elementos).getTipoDeAluno().equals("Bolseiro")) {
+                System.out.printf("Nome %s e bolsa %f.",elementos.getNome(),((Alunos) elementos).getBolsa());
+                System.out.println();
+            }
+        }
+
+        /*
+            A alínea final terá de ser resolvida de forma diferente, pois não dá para tirar proveito de polimorfismo.
+            A interface mensalidade terá de ser partilhada pelas classes concretas utilizadas.
+         */
 
     }
 }
